@@ -1,0 +1,165 @@
+@charset "utf-8";
+/* CSS Document */
+/* 　スタイルシート */
+/* 2010/07/20 HccSoft S.Okazaki *******************************/
+
+/* body
+***************************************************************/
+body {
+    font-family: Helvetica, "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 1em;
+    color: #333333;
+	margin: 0;
+}
+.s120 {
+	font-size: 120%;
+}
+a {
+	color: #f9587c;
+}
+/* title-area
+***************************************************************/
+.title-area {
+    background: #f9587c;
+	border-top: 5px solid #f9587c;
+}
+.title {
+    padding: 15px 0 30px;
+	text-align: center;
+	color: #ffffff;
+}
+.title > h1 {
+    margin: 20px 0 20px;
+}
+.title > h1 img {
+    width: 150px;
+	padding: 20px;
+	background: #ffffff;
+	border-radius: 20px;
+}
+.contents {
+	padding: 40px 20px;
+}
+.contents.bg1 {
+	background: #ffffff;
+}
+.contents.bg2 {
+	background: #f7f7f7;
+}
+h3 {
+	text-align: center;
+	font-size: 150%;
+	margin-bottom: 20px;
+}
+h3 span {
+	font-size: 80%;
+}
+.info {
+	margin: 0 auto 50px;
+	max-width: 800px;
+	text-align: center;
+}
+.info p {
+	line-height: 1.5rem;
+	margin-bottom: 20px;
+}
+.representative {
+	margin: 20px auto;
+	max-width: 700px;
+}
+.representative img {
+	float: right;
+	margin-left: 10px;
+}
+.representative h3 {
+	padding: 5px;
+	font-size: 120%;
+	border-bottom: solid 2px #f9587c;
+	color: #f9587c;
+	margin-bottom: 20px;
+}
+.representative p {
+	line-height: 1.5rem;
+	margin-bottom: 10px;
+}
+.learning-list {
+	float: left;
+	margin: 0% 2.6% 10px;
+	width: 28%;
+	text-align: center;
+}
+.learning-list p {
+	margin-bottom: 5px;
+}
+.learning-ex {
+	clear: both;
+}
+.schedule {
+	clear: both;
+	margin: 0 auto 30px;
+	max-width: 600px;
+	background: #ffffff;
+	padding: 20px;
+	text-align: center;
+}
+.schedule p {
+	line-height: 1.5rem;
+	padding: 5px;
+}
+.schedule p + p {
+	border-top: dotted 1px #cdcdcd;
+}
+.footer {
+	background: #f9587c;
+	color: #ffffff;
+	text-align: center;
+	padding: 20px;
+}
+.footer img {
+	padding: 10px;
+	background: #ffffff;
+	margin-bottom: 20px;
+	border-radius: 10px;
+}
+
+@media screen and (max-width:680px){
+	body {
+		font-size: 90%;
+	}
+	.title {
+		padding: 10px 0 20px;
+	}
+    .title > h1 img {
+		width: 100px;
+	}
+	.info {
+		text-align: left;
+	}
+	.contents {
+		padding: 20px;
+	}
+	.representative {
+		text-align: center;
+	}
+	.representative img {
+		float: none;
+		margin: 0 auto;
+		width: 200px;
+		margin-bottom: 10px;
+	}
+	.representative p {
+		line-height: 1.2rem;
+	}
+	.learning-list {
+		float: none;
+		width: 80%;
+		margin: 0 auto 10px;
+	}
+	.learning-ex {
+		text-align: center;
+	}
+	.schedule {
+		text-align: left;
+	}
+}
+

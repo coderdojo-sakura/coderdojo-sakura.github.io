@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* よく登場する要素のリセット */ 
+h1, h2, h3, h4, h5, h6, p, address, 
+ul, ol, li, dl, dt, dd, span,
+table, caption, th, td, img, form { 
+        margin: 0;
+        padding: 0;
+        border: none;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 100%;
+        list-style-type: none;
+}
+
+/* テキストエリア内文字サイズのブラウザ間での差異をなくす */ 
+textarea { font-size: 100%; }
+
+/* hr 要素は不可視で使う */ 
+hr { display: none; }
+
+/* clearfix */
+/* For modern browsers */
+.clearfix:before,
+.clearfix:after {
+	content:"";
+	display:block;
+	overflow:hidden;
+}
+.clearfix:after {
+	clear:both;
+}
+/* For IE 6/7 (trigger hasLayout) */
+.clearfix {
+	zoom:1;
+}
