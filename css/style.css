@@ -109,6 +109,21 @@ h3 span {
 .schedule p + p {
 	border-top: dotted 1px #cdcdcd;
 }
+.sponsor {
+	clear: both;
+	margin: 0 auto 30px;
+	max-width: 600px;
+	background: #ffffff;
+	padding: 20px;
+	text-align: center;
+}
+.sponsor p {
+	line-height: 1.5rem;
+	padding: 5px;
+}
+.sponsor p + p {
+	border-top: dotted 1px #cdcdcd;
+}
 .footer {
 	background: #f9587c;
 	color: #ffffff;
