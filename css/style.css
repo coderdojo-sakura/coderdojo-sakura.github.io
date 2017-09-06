@@ -178,3 +178,6 @@ h3 span {
 	}
 }
 
+img {
+	max-width: 100%;
+}
