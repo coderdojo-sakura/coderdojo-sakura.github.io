@@ -67,11 +67,22 @@ h3 span {
 	margin: 20px auto;
 	max-width: 700px;
 }
-.representative img {
-	float: right;
-	margin-left: 10px;
+.representative .rep-content {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: space-between;
+}
+.representative .rep-content:not(:last-child) {
+	border-bottom: 1px solid #dddddd;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+.representative .rep-text {
+	width: calc(100% - 320px);
 }
 .representative h3 {
+	width: 100%;
 	padding: 5px;
 	font-size: 120%;
 	border-bottom: solid 2px #f9587c;
@@ -81,6 +92,21 @@ h3 span {
 .representative p {
 	line-height: 1.5rem;
 	margin-bottom: 10px;
+}
+.representative img {
+	min-width: 200px;
+	max-width: 300px;
+	object-fit: contain;
+}
+.btn-contact {
+	display: block;
+	width: 230px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 4px;
+	border: 1px solid #f9587c;
+	padding: 12px 8px;
+	margin: 60px auto 20px;
 }
 .learning-list {
 	float: left;
@@ -108,6 +134,16 @@ h3 span {
 }
 .schedule p + p {
 	border-top: dotted 1px #cdcdcd;
+}
+.btn-application {
+	display: block;
+	width: 220px;
+	text-decoration: none;
+	color: #ffffff;
+	background-color: #f9587c;
+	border-radius: 4px;
+	padding: 12px 16px;
+	margin: 20px auto 0;
 }
 .sponsor {
 	clear: both;
@@ -153,13 +189,16 @@ h3 span {
 	.contents {
 		padding: 20px;
 	}
-	.representative {
-		text-align: center;
+	.representative .rep-content {
+		flex-direction: column!important;
+	}
+	.representative .rep-text {
+		width: 100%;
 	}
 	.representative img {
-		float: none;
+		width: 100%;
+		max-width: 400px;
 		margin: 0 auto;
-		width: 200px;
 		margin-bottom: 10px;
 	}
 	.representative p {
@@ -180,4 +219,13 @@ h3 span {
 
 img {
 	max-width: 100%;
+}
+
+@media (hover) {
+	a:hover {
+		text-decoration: none;
+	}
+	a[class^="btn-"]:hover {
+		opacity: .65;
+	}
 }
